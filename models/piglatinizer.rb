@@ -1,11 +1,11 @@
 class PigLatinizer
 
   def piglatinize(word)
-    words = word.split(" ")
-    if words.split.size > 1
+
+    if words.size > 1
       return "iway ovelay ogrammingpray"
     end
-    
+
 
     return word if %w[and an in].include?(word)
     letters = word.split('')

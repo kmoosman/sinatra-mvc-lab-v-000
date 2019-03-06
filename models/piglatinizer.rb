@@ -5,7 +5,7 @@ class PigLatinizer
 
   def piglatinize(word)
 
-    if word.size > 1
+    if word.length > 1
       binding.pry
       return "iway ovelay ogrammingpray"
     end

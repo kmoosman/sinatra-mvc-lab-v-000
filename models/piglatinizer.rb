@@ -6,7 +6,7 @@ class PigLatinizer
   def piglatinize(word)
 
     if word.include?(" ")
-      self.to_pig_latin(word)
+      return to_pig_latin(word)
     end
 
     return word if %w[and an in].include?(word)

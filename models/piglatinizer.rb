@@ -14,17 +14,13 @@ class PigLatinizer
 
       letters << letters.shift
 
-      # end
-
     end
-    # end
     letters << "ay"
     letters.join
 
   end
 
   def vowel?(letter)
-    # letter.downcase
     letter == "o" || letter == "e" || letter == "a" || letter == "i" || letter == "u"
   end
 

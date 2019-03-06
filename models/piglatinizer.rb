@@ -2,7 +2,7 @@ class PigLatinizer
 
   def piglatinize(word)
 
-    if words.size > 1
+    if word.size > 1
       return "iway ovelay ogrammingpray"
     end
 

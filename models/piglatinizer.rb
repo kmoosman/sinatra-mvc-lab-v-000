@@ -6,7 +6,7 @@ class PigLatinizer
   def piglatinize(word)
 
     if word.include?(" ")
-      return "iway ovelay ogrammingpray"
+      to_pig_latin(word)
     end
 
 

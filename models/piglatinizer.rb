@@ -1,10 +1,6 @@
 class PigLatinizer
 
   def piglatinize(word)
-    # word_array = word.split('')
-    # first_letter = word_array[0]
-
-    # word_array << %w(a e i o u).include?(word[0]) ? 'way' : 'ay'
     return word if %w[and an in].include?(word)
     letters = word.split('')
     letters.keep_if {|letter| letter != "."}

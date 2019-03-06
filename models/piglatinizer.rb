@@ -32,7 +32,7 @@ class PigLatinizer
 
     words = text.split(" ")
     words.map! {|word| piglatinize(word)}
-    binding.pry
+    # binding.pry
     words.join(" ")
   end
 

@@ -2,7 +2,6 @@ require 'pry'
 
 class PigLatinizer
 
-
   def piglatinize(word)
     if word.include?(" ")
       return to_pig_latin(word)

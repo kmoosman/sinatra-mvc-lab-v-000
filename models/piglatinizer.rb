@@ -4,14 +4,13 @@ class PigLatinizer
 
 
   def piglatinize(word)
-
     if word.include?(" ")
       return to_pig_latin(word)
     end
 
     return word if %w[and an in].include?(word)
     letters = word.split('')
-    letters.keep_if {|letter| letter != "."}
+    # letters.keep_if {|letter| letter != "."}
     if vowel?(letters[0].downcase)
         letters << "w"
     elsif !vowel?(letters[0].downcase) && !vowel?(letters[1].downcase) && !vowel?(letters[2].downcase)

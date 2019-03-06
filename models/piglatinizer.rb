@@ -6,7 +6,6 @@ class PigLatinizer
   def piglatinize(word)
 
     if word.include?(" ")
-      binding.pry
       return "iway ovelay ogrammingpray"
     end
 

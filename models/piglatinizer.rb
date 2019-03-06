@@ -1,6 +1,8 @@
 class PigLatinizer
 
   def piglatinize(word)
+    
+    
     return word if %w[and an in].include?(word)
     letters = word.split('')
     letters.keep_if {|letter| letter != "."}
@@ -18,6 +20,12 @@ class PigLatinizer
     letters << "ay"
     letters.join
 
+  end
+
+  def to_pig_latin(text)
+    words = text.split(" ")
+    words.map! {|word| piglatinize(word)}
+    words.join(" ")
   end
 
   def vowel?(letter)

@@ -9,7 +9,6 @@ class PigLatinizer
       to_pig_latin(word)
     end
 
-
     return word if %w[and an in].include?(word)
     letters = word.split('')
     letters.keep_if {|letter| letter != "."}

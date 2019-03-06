@@ -1,4 +1,7 @@
+require 'pry'
+
 class PigLatinizer
+
 
   def piglatinize(word)
 
